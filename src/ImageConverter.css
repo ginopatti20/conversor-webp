@@ -1,0 +1,113 @@
+body {
+    background-image: radial-gradient(at 17.788067770664618% 15.644355699411427%, hsla(243.97350993377484, 72.24880382775119%, 40.98039215686275%, 1) 0%, hsla(243.97350993377484, 72.24880382775119%, 40.98039215686275%, 0) 100%), radial-gradient(at 50.574635610086816% 72.6883081727355%, hsla(154.17218543046357, 72.24880382775119%, 40.98039215686275%, 1) 0%, hsla(154.17218543046357, 72.24880382775119%, 40.98039215686275%, 0) 100%), radial-gradient(at 9.958808014568543% 70.63098381681829%, hsla(243.97350993377484, 72.24880382775119%, 40.98039215686275%, 1) 0%, hsla(243.97350993377484, 72.24880382775119%, 40.98039215686275%, 0) 100%), radial-gradient(at 30.397155192295067% 26.60744712517056%, hsla(154.17218543046357, 72.24880382775119%, 40.98039215686275%, 1) 0%, hsla(154.17218543046357, 72.24880382775119%, 40.98039215686275%, 0) 100%), radial-gradient(at 82.95517037248456% 3.7406627190798014%, hsla(243.97350993377484, 72.24880382775119%, 40.98039215686275%, 1) 0%, hsla(243.97350993377484, 72.24880382775119%, 40.98039215686275%, 0) 100%), radial-gradient(at 35.39551890635006% 44.57833986384146%, hsla(154.17218543046357, 72.24880382775119%, 40.98039215686275%, 1) 0%, hsla(154.17218543046357, 72.24880382775119%, 40.98039215686275%, 0) 100%), radial-gradient(at 58.1413974736648% 37.34404770839792%, hsla(243.97350993377484, 72.24880382775119%, 40.98039215686275%, 1) 0%, hsla(243.97350993377484, 72.24880382775119%, 40.98039215686275%, 0) 100%), radial-gradient(at 26.13840184805929% 62.20680307986925%, hsla(154.17218543046357, 72.24880382775119%, 40.98039215686275%, 1) 0%, hsla(154.17218543046357, 72.24880382775119%, 40.98039215686275%, 0) 100%), radial-gradient(at 49.482091754876635% 53.28470785114339%, hsla(243.97350993377484, 72.24880382775119%, 40.98039215686275%, 1) 0%, hsla(243.97350993377484, 72.24880382775119%, 40.98039215686275%, 0) 100%), radial-gradient(at 79.61201448144975% 55.5408866316355%, hsla(154.17218543046357, 72.24880382775119%, 40.98039215686275%, 1) 0%, hsla(154.17218543046357, 72.24880382775119%, 40.98039215686275%, 0) 100%);
+    color: #e0e0e0;
+    font-family: 'Montserrat';
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  
+  .upload-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .file-input {
+    display: none;
+  }
+  
+  .file-label {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #1e3a8a;
+    color: white;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .file-label:hover {
+    background-color: #2563eb;
+  }
+  
+  .loading {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .spinner {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border: 0.25rem solid rgba(59, 130, 246, 0.3);
+    border-radius: 50%;
+    border-top-color: #3b82f6;
+    animation: spin 1s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .image-box {
+    flex: 1 1 300px;
+  }
+  
+  .image-box h2 {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .image-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .download-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 5px 10px;
+    background-color: #1e3a8a;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .download-button:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 600px) {
+    .image-container {
+      flex-direction: column;
+    }
+  }
